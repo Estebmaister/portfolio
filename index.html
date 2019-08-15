@@ -18,12 +18,14 @@
         background-color: #000000;
         background-image: url("Background Image");
         background-repeat: no-repeat;
+        margin: 0px;
+        padding: 0px;
       }
       a {
-        color: #00ffff;
+        color: #00ffff; /*Firts Color*/
       }
       a:visited {
-        color: #ff0080;
+        color: #ff0080; /*Second Color*/
       }
       a:hover {
         color: #3366ff;
@@ -38,39 +40,62 @@
       a:visited {
         text-decoration: none;
       }
+      header {
+        display: flex;
+        border: #ff0000 solid;
+        margin: 0px;
+        padding: 0px;
+      }
+      header nav ul {
+        list-style: none;
+        display: flex;
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="header-bar">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="img/logo.png" alt="" />
-          </a>
-        </div>
-        <div class="menu-trigger blue">
-          <span class="icon-menu"></span>
-        </div>
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="EC_Logo" />
+        </a>
       </div>
-      <!-- Inicio de la barra de navegación -->
-      <nav></nav>
+      <!-- Begin of the nav bar -->
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#goals">Metas</a></li>
+          <li><a href="#projects">Proyectos realizados</a></li>
+          <li><a href="#experience">Experiencia y formación</a></li>
+          <li><a href="#rrss">Redes Sociales</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- Presentation -->
     <h1>Hi there!</h1>
     <p>This is a part of me that I want to share with you.</p>
-
+    <input
+      onclick="changeCSS()"
+      type="button"
+      name="Click me to change CSS"
+      value="Click me..."
+    />
+    <button type="button" onclick="changeCSS()">Click Me!?</button>
+    <br />
     <h2>About me</h2>
     <p>
       Soy un estudiante de la vida! en constante aprendizaje y siempre dispuesto
       a compartir los conocimientos adquiridos.
       <br />
       Actualmente cursando la carrera de Ingeniería Química en la
-      <a>Universidad Simón Bolívar (USB)</a>, en el cuarto año, con intenciones
-      de iniciar pasntías pronto. Adicional a esto pertenezco al Cuerpo de
-      Bomberos Voluntarios de la USB (CBVUSB), donde comencé mi formación en el
-      año 2011 y desde el 2013 me desempeño como bombero activo, teniendo cargos
-      como Sub-Gerente de Operaciones (2015) y Sub Gerente de Administración
-      (2016-2017).
+      <a href="https://www.usb.ve">Universidad Simón Bolívar (USB)</a>, en el
+      cuarto año, con intenciones de iniciar pasntías pronto. Adicional a esto
+      pertenezco al
+      <a href="https://bomberos.usb.ve"
+        >Cuerpo de Bomberos Voluntarios de la USB (CBVUSB)</a
+      >, donde comencé mi formación en el año 2011 y desde el 2013 me desempeño
+      como bombero activo, teniendo cargos como Sub-Gerente de Operaciones
+      (2015) y Sub Gerente de Administración (2016-2017).
       <br />
       Luego de graduarme del curso de formación de bombero y aprovechando las
       oportunidades ofrecidas por las organizaciones estudiantiles de la USB,

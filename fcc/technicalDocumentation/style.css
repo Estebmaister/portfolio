@@ -1,0 +1,120 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 200px;
+  top: 0px;
+  left: 0px;
+  width: 270px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: thin;
+}
+#h-doc {
+  margin: 0px;
+  padding: 10px 3px;
+  display: flex;
+}
+#a-logo {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+#header-img {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#h-doc p {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline;
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover {
+  background-color: gray;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Main doc*/
+#main-doc {
+  position: absolute;
+  margin-left: 270px;
+  padding: 20px;
+}
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+#credits {
+  text-decoration: none;
+  color: lightgrey;
+  border: none;
+  font-size: 15px;
+}
+#credits:hover {
+  text-decoration: none;
+  color: grey;
+  border: none;
+  font-size: 15px;
+}
+@media screen and (max-width: 833px) {
+  #navbar {
+    position: fixed;
+    min-width: 100px;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+  }
+  span {
+    display: none;
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 200px;
+    padding: 20px;
+  }
+}

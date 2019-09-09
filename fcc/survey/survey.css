@@ -1,0 +1,132 @@
+* {
+  border: 1px solid green;
+  margin: 2px;
+  padding: 2px;
+}
+html,
+body,
+main,
+form,
+footer {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+h1,
+p {
+  text-align: center;
+  border: none;
+  padding: 25px 10px 10px 10px;
+}
+.form-outer {
+  border: none;
+  background: lightgrey;
+  width: 80%;
+  max-width: 900px;
+  margin: 5px auto;
+  padding: 5px 10px;
+}
+form {
+  border: none;
+}
+.rowTab {
+  border: none;
+  margin: 5px;
+}
+.labels {
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+}
+
+label {
+  border: none;
+  font-family: sans-serif;
+}
+.rightTab {
+  text-align: left;
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+  border: none;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+ul,
+li {
+  border: none;
+  list-style: none;
+}
+.radio,
+.checkbox {
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 1px;
+}
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px auto;
+  border: 0px solid;
+  display: block;
+}
+#comments {
+  border: none;
+  height: 50px;
+  resize: vertical;
+}
+#credits {
+  text-decoration: none;
+  color: lightgrey;
+  border: none;
+}
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  .dropdown {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+}

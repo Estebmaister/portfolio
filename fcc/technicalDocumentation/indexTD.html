@@ -25,11 +25,11 @@
         <main id="main-doc">
           <nav id="navbar">
             <header id="h-doc">
-              <a id="a-logo" class="logo" href="#"
+              <a id="a-logo" class="logo" href="../../index.html"
                 ><img
                   class="logo"
                   id="header-img"
-                  src="https://www.crearlogogratisonline.com/images/crearlogogratis_1024x1024_01.png"
+                  src="../../img/logo.png"
                   alt="Logo"
               /></a>
               <p>Sass <span>Documentation</span></p>
@@ -121,15 +121,25 @@
                 font stacks, or any CSS value you think you'll want to reuse. Sass
                 uses the $ symbol to make something a variable. Here's an example:
               </p>
-              <code
-                >$font-stack: Helvetica, sans-serif; $primary-color: #333; body {
-                font: 100% $font-stack; color: $primary-color; }</code
-              >
-              <code
-                >$font-stack: Helvetica, sans-serif $primary-color: #333 body font:
-                100% $font-stack color: $primary-color</code
-              >
-              <code>body { font: 100% Helvetica, sans-serif; color: #333; }</code>
+              <code>
+                $font-stack: Helvetica, sans-serif; 
+                $primary-color: #333; body {
+                  font: 100% $font-stack; 
+                  color: $primary-color; 
+                }
+              </code>
+              <code>
+                $font-stack: Helvetica, sans-serif 
+                $primary-color: #333 body font:100%
+                $font-stack color: 
+                $primary-color
+              </code>
+              <code>
+                body { 
+                  font: 100% Helvetica, sans-serif; 
+                  color: #333; 
+                }
+              </code>
               <P
                 >When the Sass is processed, it takes the variables we define for
                 the $font-stack and $primary-color and outputs normal CSS with our

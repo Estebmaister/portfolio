@@ -95,7 +95,8 @@ p {
   margin: 0px;
 }
 section p {
-  padding-top: 50px;
+  padding-top: 60px;
+  font-size: 1.8em;
 }
 h1,
 h2 {
@@ -168,12 +169,12 @@ h2 {
 }
 /* Social */
 #social-section {
-  height: 80vh;
+  height: 60vh;
   background-color: #6a6a6a;
   padding: 0 2rem;
 }
 #social-section p {
-  padding: 20px;
+  padding: 3em;
   font-family: "Lucida Console";
 }
 /* Footer */
@@ -217,10 +218,10 @@ h2 {
 .icon-pack1 ul li a {
   position: relative;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 3em;
+  height: 3em;
   text-align: center;
-  line-height: 60px;
+  line-height: 3em;
   color: #666;
   font-size: 30px;
   border-radius: 50%;
@@ -238,6 +239,9 @@ h2 {
   }
   .icon-pack1 {
     padding: 20px 10%;
+  }
+  section p {
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 520px) {

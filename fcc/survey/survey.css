@@ -3,6 +3,9 @@
   margin: 2px;
   padding: 2px;
 }
+html {
+  scroll-behavior: smooth;
+}
 html,
 body,
 main,

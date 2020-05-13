@@ -169,9 +169,9 @@ h2 {
 }
 /* Social */
 #social-section {
-  height: 60vh;
+  height: 100%;
   background-color: #6a6a6a;
-  padding: 0 2rem;
+  padding: 2rem 0;
 }
 #social-section p {
   padding: 3em;

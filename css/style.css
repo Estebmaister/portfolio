@@ -1,3 +1,13 @@
+:root {
+  --primary-color: black;
+  --secondary-color: lightgray;
+  --contrast-color: white;
+  --shadow: grey;
+  --color-deg-1: #181719;
+  --color-deg-2: #f1f1f1;
+  --color-deg-3: #6a6a6a;
+}
+
 /* ------- Page structure ------*/
 
 html {
@@ -17,8 +27,8 @@ header {
   border: none;
   height: 50px;
   width: 100%;
-  background-color: lightgray;
-  box-shadow: 0 1px 4px grey;
+  background-color: var(--secondary-color, lightgray);
+  box-shadow: 0 1px 4px var(--shadow, grey);
 }
 
 .logo {
@@ -55,14 +65,14 @@ header {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: #000;
+  color: var(--primary-color, black);
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
 }
 .nav-link:after {
   text-decoration: none;
-  color: #000;
+  color: var(--primary-color, black);
 }
 .nav-sec {
   display: flex;
@@ -74,7 +84,7 @@ header {
   transition: 0.3s;
 }
 .nav-sec:hover {
-  background-color: grey;
+  background-color: var(--shadow, gray);
 }
 .nav-sec:active {
   background-color: transparent;
@@ -112,8 +122,12 @@ h2 {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(0deg, #f1f1f1 0%, #181719 100%);
+  background-color: var(--secondary-color, grey);
+  background-image: linear-gradient(
+    0deg,
+    var(--color-deg-2, #f1f1f1) 0%,
+    var(--color-deg-1, #181719) 100%
+  );
 }
 #welcome-section h1 {
   font-size: 4rem;
@@ -122,8 +136,12 @@ h2 {
 /* Projects */
 #projects {
   min-height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(180deg, #f1f1f1 0%, #6a6a6a 100%);
+  background-color: var(--secondary-color, grey);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-deg-2, #f1f1f1) 0%,
+    var(--color-deg-3, #6a6a6a) 100%
+  );
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -134,7 +152,7 @@ h2 {
   width: 100%;
 }
 .text-projects {
-  padding: 40px 10%;
+  padding: 60px 10%;
   width: 100%;
 }
 .project-tile {
@@ -144,7 +162,7 @@ h2 {
 }
 .project-link {
   text-decoration: none;
-  color: #eee;
+  color: var(--contrast-color, white);
   border: none;
   display: flex;
   flex-direction: column;
@@ -161,7 +179,7 @@ h2 {
 .project-tile:hover p {
   background-color: rgba(1, 1, 1, 0.3);
   font-size: 1.1rem;
-  text-shadow: 0px 0px 2px #111;
+  text-shadow: 0px 0px 3px var(--primary-color, black);
 }
 .project-img {
   width: 100%;
@@ -170,7 +188,7 @@ h2 {
 /* Social */
 #social-section {
   height: 100%;
-  background-color: #6a6a6a;
+  background-color: var(--color-deg-3, #6a6a6a);
   padding: 2rem 0;
 }
 #social-section p {
@@ -179,23 +197,24 @@ h2 {
 }
 /* Footer */
 .credits {
-  background-color: lightgray;
-  border-top: 5px solid black;
+  background-color: var(--secondary-color, lightgray);
+  border-top: 5px solid var(--primary-color, black);
   display: block;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: var(--contrast-color, white);
   font-size: 16px;
   padding: 2rem;
-  text-shadow: 1px 1px 1px #000, 0px 0px 10px #000;
+  text-shadow: 1px 1px 1px var(--primary-color, black),
+    0px 0px 7px var(--primary-color, black);
   transition: 0.3s;
 }
 .credits:hover {
   text-decoration: none;
-  color: #000;
+  color: var(--primary-color, black);
   font-size: 16px;
   font-weight: 700;
-  text-shadow: 0px 0px 1px #fff;
+  text-shadow: 0px 0px 1px var(--contrast-color, white);
 }
 
 /* Icon Pack part 1*/
@@ -303,6 +322,7 @@ h2 {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
+  transform: scale(0.9);
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
@@ -367,6 +387,7 @@ h2 {
 }
 
 .icon-pack1 ul li:nth-child(1) a:hover:before {
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -376,6 +397,7 @@ h2 {
   -o-box-shadow: 0 0 15px #3b5999;
 }
 .icon-pack1 ul li:nth-child(2) a:hover:before {
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -385,6 +407,7 @@ h2 {
   -o-box-shadow: 0 0 15px #0077b5;
 }
 .icon-pack1 ul li:nth-child(3) a:hover:before {
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -394,11 +417,12 @@ h2 {
   -o-box-shadow: 0 0 15px #e4405f;
 }
 .icon-pack1 ul li:nth-child(4) a:hover:before {
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   box-shadow: 0 0 15px #55acee;
   -webkit-box-shadow: 0 0 15px #55acee;
-  moz-box-shadow: 0 0 15px #55acee;
+  -moz-window-shadow: 0 0 15px #55acee;
   -o-box-shadow: 0 0 15px #55acee;
 }

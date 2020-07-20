@@ -8,6 +8,14 @@
   --color-deg-3: #6a6a6a;
 }
 
+/* ------- 1. Page structure ------*/
+/* ------- 2. Main           ------*/
+/* ------- 3. Projects       ------*/
+/* ------- 4. Social         ------*/
+/* ------- 5. Footer         ------*/
+/* ------- 6. Icon Pack      ------*/
+/* ------- 7. Animation      ------*/
+
 /* ------- Page structure ------*/
 
 html {
@@ -22,6 +30,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 1;
   top: 0px;
   display: flex;
   border: none;
@@ -425,4 +434,14 @@ h2 {
   -webkit-box-shadow: 0 0 15px #55acee;
   -moz-window-shadow: 0 0 15px #55acee;
   -o-box-shadow: 0 0 15px #55acee;
+}
+
+/* ------- Animation      ------*/
+.toFadeAnim {
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+}
+
+.toFadeAnim.fadeIn {
+  opacity: 1;
 }

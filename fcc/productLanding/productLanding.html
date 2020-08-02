@@ -1,147 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Product EC</title>
-    <meta name="author" content="Esteban Camargo" />
-    <link rel="icon" type="image/png" href="../../imgs/favicon.ico" />
-    <link rel="shortcut icon" href="../../img/favicon.ico" />
 
-    <script type="text/javascript">
-      var flag = 1;
-    </script>
-    <style type="text/css">
-      * {
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Product EC</title>
+  <meta name="author" content="Esteban Camargo" />
+  <link rel="icon" type="image/png" href="../../imgs/favicon.ico" />
+  <link rel="shortcut icon" href="../../img/favicon.ico" />
+  <link id="css" rel="stylesheet" type="text/css" href="style.css" />
+  <link id="css" rel="stylesheet" type="text/css" href="form.css" />
+</head>
 
-    <script type="text/javascript" src="#"></script>
-    <link id="css" rel="stylesheet" type="text/css" href="style.css" />
-  </head>
+<body>
+  <main id="main">
+    <header id="header">
+      <a class="logo" href="#"><img class="logo" id="header-img"
+          src="https://www.crearlogogratisonline.com/images/crearlogogratis_1024x1024_01.png" alt="Logo" /></a>
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-sec">
+            <a class="nav-link" href="#Section1">Contact</a>
+          </li>
+          <li class="nav-sec">
+            <a class="nav-link" href="#Section2">View</a>
+          </li>
+          <li class="nav-sec">
+            <a class="nav-link" href="#Section3">Adventures</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="Section1">
+      <h1 id="title">Venture, Enjoy, Repeat.</h1>
+      <div class="form-outer">
+        <form id="form" method="GET"
+          action="https://gmail.us20.list-manage.com/subscribe/post?u=4dd24115b66bc79793c2bf407&id=58d34f1934">
+          <div class="box-form">
+            <p id="description-form">Do you want to ask me something?</p>
+            <input id="submit" type="submit" value="Submit" class="btn" />
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" id="email" class="input-field" required autocomplete="off" value=""
+              onkeyup="this.setAttribute('value', this.value);" />
+            <label class="label-input" id="email-label" for="email">
+              <span class="content-label">Email</span>
+            </label>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
 
-  <body>
-    <main id="main">
-      <header id="header">
-        <a class="logo" href="#"
-          ><img
-            class="logo"
-            id="header-img"
-            src="https://www.crearlogogratisonline.com/images/crearlogogratis_1024x1024_01.png"
-            alt="Logo"
-        /></a>
-        <nav id="nav-bar">
-          <ul>
-            <li class="nav-sec">
-              <a class="nav-link" href="#Section1">Contact</a>
-            </li>
-            <li class="nav-sec">
-              <a class="nav-link" href="#Section2">View</a>
-            </li>
-            <li class="nav-sec">
-              <a class="nav-link" href="#Section3">Adventures</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section id="Section1">
-        <h1 id="title">Venture, Enjoy, Repeat.</h1>
-        <div class="form-outer">
-          <form
-            id="form"
-            method="GET"
-            action="https://gmail.us20.list-manage.com/subscribe/post?u=4dd24115b66bc79793c2bf407&id=58d34f1934"
-          >
-            <div class="box-form">
-              <p id="description-form">Do you want to ask me something?</p>
-              <input id="submit" type="submit" value="Submit" class="btn" />
             </div>
-            <div class="rowTab">
-              <div class="labels">
-                <label id="email-label" for="email">*Email: </label>
-              </div>
-              <div class="rightTab">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="input-field"
-                  required=""
-                  placeholder="Enter your Email"
-                />
-              </div>
-            </div>
+            <div class="rightTab">
 
-            <div class="rowTab">
-              <div class="labels">
-                <label for="comments">Place your question here:</label>
-              </div>
-              <div class="rightTab">
-                <textarea
-                  id="comments"
-                  class="input-field"
-                  name="comment"
-                  placeholder="What date can I pick?..."
-                ></textarea>
-              </div>
             </div>
-          </form>
-        </div>
-      </section>
-      <section id="Section2">
-        <iframe
-          id="video"
-          width="96%"
-          height="400px"
-          src="https://www.youtube.com/embed/bSSPWMuriZs"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section id="Section3">
-        <div class="product" id="desert">
-          <div class="level">desert</div>
-          <h2>$600</h2>
-          <ul>
-            <li>Sand everywhere.</li>
-            <li>Camels.</li>
-            <li>Captus.</li>
-            <li>Oasis.</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-        <div class="product" id="mountain">
-          <div class="level">mountain</div>
-          <h2>$900</h2>
-          <ul>
-            <li>Greats views.</li>
-            <li>Challengin treks.</li>
-            <li>Waterfalls.</li>
-            <li>Animals.</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-        <div class="product" id="sea">
-          <div class="level">sea</div>
-          <h2>$1200</h2>
-          <ul>
-            <li>Warm and cold.</li>
-            <li>Deep blue.</li>
-            <li>Long horizon.</li>
-            <li>Salty fun.</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-      </section>
-      <footer>
-        <p>
-          <a id="credits" href="../../index.html" target="_blank">
-            © Estebmaister 2019
-          </a>
-        </p>
-      </footer>
-    </main>
-  </body>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="comments">Place your question here:</label>
+            </div>
+            <div class="rightTab">
+              <textarea id="comments" class="input-field" name="comment"
+                placeholder="What date can I pick?..."></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="Section2">
+      <iframe id="video" width="96%" height="400px" src="https://www.youtube.com/embed/bSSPWMuriZs" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="Section3">
+      <div class="product" id="desert">
+        <div class="level">desert</div>
+        <h2>$600</h2>
+        <ul>
+          <li>Sand everywhere.</li>
+          <li>Camels.</li>
+          <li>Captus.</li>
+          <li>Oasis.</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="mountain">
+        <div class="level">mountain</div>
+        <h2>$900</h2>
+        <ul>
+          <li>Greats views.</li>
+          <li>Challengin treks.</li>
+          <li>Waterfalls.</li>
+          <li>Animals.</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="sea">
+        <div class="level">sea</div>
+        <h2>$1200</h2>
+        <ul>
+          <li>Warm and cold.</li>
+          <li>Deep blue.</li>
+          <li>Long horizon.</li>
+          <li>Salty fun.</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <p>
+        <a id="credits" href="../../index.html" target="_blank">
+          © Estebmaister 2019
+        </a>
+      </p>
+    </footer>
+  </main>
+</body>
+
 </html>

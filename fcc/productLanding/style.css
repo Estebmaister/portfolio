@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +30,7 @@ header {
   height: 50px;
   width: 100%;
   background-color: lightgray;
+  z-index: 1;
 }
 .logo {
   height: 50px;

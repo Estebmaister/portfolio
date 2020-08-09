@@ -2,16 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-body,
-main {
-  margin: 0px;
-  padding: 0px;
   font-family: "helvetica", sans-serif;
+  scroll-behavior: smooth;
 }
 h1,
 p {
@@ -20,8 +12,9 @@ p {
   padding: 0;
 }
 h1 {
-  font-weight: 1000;
-  font-size: 50px;
+  font-weight: bold;
+  font-size: 4em;
+  padding-bottom: 1em;
 }
 header {
   position: fixed;
@@ -35,37 +28,31 @@ header {
 .logo {
   height: 50px;
   width: auto;
-  background-color: transparent;
 }
 .logo:hover {
   height: 60px;
-  width: auto;
-  background-color: gray;
 }
-#nav-bar {
+nav {
   display: flex;
-  margin: 0 0 0 auto;
-  height: 100%;
+  margin-left: auto;
   width: 75%;
 }
-ul {
-  list-style: none;
+nav ul {
+  display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  display: flex;
-  margin: 0px;
-  padding: 0px;
+  list-style: none;
 }
 .nav-sec {
   display: flex;
   flex: 1 1 auto;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
 }
 .nav-sec:hover {
-  background-color: grey;
-  height: 60px;
+  height: 55px;
+  padding-bottom: 5px;
+  background-color: rgba(163, 163, 163, 0.815);
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 a {
   display: flex;
@@ -79,10 +66,7 @@ a {
   font-size: 15px;
   text-transform: uppercase;
 }
-a:after {
-  text-decoration: none;
-  text-color: black;
-}
+
 #Section1 {
   padding: 50px 0px 20px 0px;
 }

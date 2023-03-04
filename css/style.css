@@ -1,13 +1,14 @@
-:root {
-  --primary-color: black;
-  --secondary-color: lightgray;
-  --contrast-color: white;
-  --shadow: grey;
-  --color-deg-1: #181719;
-  --color-deg-2: #f1f1f1;
-  --color-deg-3: #6a6a6a;
+html, html[data-theme="light"] {
+  --primary-color:  #000000;
+  --secondary-color:lightgray;
+  --contrast-color: #ffffff;
+  --shadow:         #808080;
+  --color-deg-1:    #181719;
+  --color-deg-2:    #f1f1f1;
+  --color-deg-3:    #6a6a6a;
 }
 
+/* ------- 0. Dark toggle    ------*/
 /* ------- 1. Page structure ------*/
 /* ------- 2. Main           ------*/
 /* ------- 3. Projects       ------*/
@@ -15,6 +16,84 @@
 /* ------- 5. Footer         ------*/
 /* ------- 6. Icon Pack      ------*/
 /* ------- 7. Animation      ------*/
+
+:root {
+  --trans-time-func: cubic-bezier(0.175, 0.885, 0.32, 1.075);
+  --toggle-cont-bg: var(--secondary-color);
+  --toggle-light:   #ffffff;
+  --toggle-dark:    #363030;
+}
+
+html[data-theme="dark"] {
+  --primary-color:  #e8e6e3;
+  --secondary-color:#575757;
+  --contrast-color: #162c46;
+  --shadow:         #555c5fa1;
+  --color-deg-1:    #35393b;
+  --color-deg-2:    #332f3f;
+  --color-deg-3:    #36262a;
+}
+
+.toggle {
+  grid-area: btn;
+  place-self: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.toggle input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle input[type=checkbox]:checked + label {
+  background: var(--toggle-dark);
+  animation: rotate 400ms var(--trans-time-func);
+  animation-delay: 250ms;
+}
+.toggle input[type=checkbox]:checked + label::after {
+  background: var(--toggle-cont-bg);
+  transform: translate(35%, -30%);
+  opacity: 1;
+}
+.toggle label.toggle-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 250ms var(--trans-time-func);
+  background: var(--toggle-light);
+  overflow: hidden;
+}
+.toggle label.toggle-btn::after {
+  content: "";
+  background: var(--toggle-cont-bg);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(72%, -72%);
+  transition: all 250ms var(--trans-time-func);
+  opacity: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 
 /* ------- Page structure ------*/
 
@@ -108,6 +187,7 @@ main {
 h1,
 h2,
 p {
+  color: var(--primary-color, white);
   text-align: center;
   border: none;
   padding: 0;
@@ -179,14 +259,15 @@ h2 {
   overflow: hidden;
 }
 .project-link p {
+  color: var(--primary-color, white);
   height: 1.5rem;
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: var(--contrast-color, black);
   font-size: 1rem;
   padding-top: 0.5rem;
   transition: 0.3s;
 }
 .project-tile:hover p {
-  background-color: rgba(1, 1, 1, 0.3);
+  background-color: var(--contrast-color, black);
   font-size: 1.1rem;
   text-shadow: 0px 0px 3px var(--primary-color, black);
 }
@@ -202,24 +283,23 @@ h2 {
 }
 #social-section p {
   padding: 3em;
-  font-family: "Lucida Console";
+  font-family: "Lucida Console", sans-serif;
 }
 /* Footer */
 .credits {
-  background-color: var(--secondary-color, lightgray);
-  border-top: 5px solid var(--primary-color, black);
+  background-color: var(--contrast-color, lightgray);
+  border-top: 5px solid var(--shadow, black);
   display: block;
   text-align: center;
   text-decoration: none;
-  color: var(--contrast-color, white);
+  color: var(--secondary-color, white);
   font-size: 16px;
+  font-weight: 600;
   padding: 2rem;
-  text-shadow: 1px 1px 1px var(--primary-color, black),
-    0px 0px 7px var(--primary-color, black);
-  transition: 0.3s;
+  text-shadow: 1px 1px 2px var(--primary-color, black);
+  transition: all 0.3s ease-out;
 }
 .credits:hover {
-  text-decoration: none;
   color: var(--primary-color, black);
   font-size: 16px;
   font-weight: 700;
